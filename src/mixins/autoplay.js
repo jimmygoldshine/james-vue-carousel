@@ -45,15 +45,11 @@ const autoplay = {
       }
     },
   },
-  updated() {
+  mounted() {
     if (!this.$isServer && this.autoplayHoverPause) {
       this.$el.addEventListener("mouseenter", this.pauseAutoplay)
       this.$el.addEventListener("mouseleave", this.startAutoplay)
     }
-
-    console.log('here')
-
-    this.startAutoplay()
   },
 }
 
