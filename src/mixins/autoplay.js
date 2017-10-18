@@ -51,6 +51,8 @@ const autoplay = {
       this.$el.addEventListener("mouseleave", this.startAutoplay)
     }
 
+    console.log('here')
+
     this.startAutoplay()
   },
 }
